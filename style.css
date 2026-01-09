@@ -486,15 +486,15 @@ footer {
 
 @media (max-width: 768px) {
 
-  /* ===== RESET HEAVY DESKTOP STYLES ===== */
+  /* ================= HERO ================= */
   .hero {
     min-height: auto;
-    padding: 80px 20px 60px;
+    padding: 90px 20px 60px;
     background-attachment: scroll;
   }
 
   .main-title {
-    font-size: 14vw;          /* 🔥 control */
+    font-size: 14vw;
     letter-spacing: 0;
     line-height: 1;
     text-align: center;
@@ -502,11 +502,12 @@ footer {
 
   .hero-date {
     position: static;
-    margin-top: 20px;
+    margin-top: 18px;
     font-size: 1.2rem;
     display: inline-block;
   }
 
+  /* ================= NAVBAR ================= */
   .navbar {
     flex-direction: row;
     justify-content: space-between;
@@ -514,20 +515,40 @@ footer {
     padding: 14px 18px;
   }
 
-  .nav-logo {
-    flex: 0 0 auto;
-  }
-
   .nav-logo img {
     max-height: 36px;
   }
 
   .hamburger {
+    display: flex;
     margin-left: auto;
   }
 
+  /* hide links by default */
   .nav-links {
+    display: none;
+    position: absolute;
     top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--cream);
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 22px 0;
+    border-bottom: 3px solid var(--red);
+    z-index: 999;
+  }
+
+  /* show on click */
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* ================= PROGRAMS ================= */
+  .explore-head {
+    font-size: 3rem;
+    text-align: center;
   }
 
   .bento-grid {
@@ -536,24 +557,30 @@ footer {
   }
 
   .bento-card {
-    min-height: 220px;
-    height: auto;
-    padding: 24px;
+    width: 100%;
+    min-height: 240px;
+    padding: 22px;
+  }
+
+  .bento-card::before {
+    opacity: 0.35;
   }
 
   .bento-card h3 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     text-align: center;
+    line-height: 1.1;
   }
 
   .card-num {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   .black-bg {
     min-height: 260px;
   }
 
+  /* ================= EVENT OVERLAY ================= */
   .event-overlay {
     padding: 20px;
   }
@@ -561,11 +588,11 @@ footer {
   .overlay-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 14px;
   }
 
   #page-category-title {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 
   .event-row {
@@ -579,6 +606,7 @@ footer {
     flex-wrap: wrap;
   }
 
+  /* ================= CONTACT & FOOTER ================= */
   .contact-container,
   .footer-container {
     flex-direction: column;
@@ -589,15 +617,6 @@ footer {
     width: 100%;
     box-shadow: none;
     transform: none;
-  }
-
-    .hamburger {
-        display: flex;
-    }
-
-  .explore-head {
-    font-size: 3rem;
-    text-align: center;
   }
 
 }
