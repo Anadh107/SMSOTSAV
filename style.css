@@ -601,6 +601,11 @@ footer {
     min-height: 260px;
   }
 
+  .bento-card.black-bg {
+    background-size: cover;
+    background-position: right center;
+  }
+
   /* ================= EVENT OVERLAY ================= */
   .event-overlay {
     padding: 20px;

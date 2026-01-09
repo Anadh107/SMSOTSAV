@@ -125,3 +125,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("active");
+}
+
+function closeMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.remove("active");
+}
