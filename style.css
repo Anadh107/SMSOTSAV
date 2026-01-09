@@ -551,6 +551,27 @@ footer {
     text-align: center;
   }
 
+    /* FORCE grid to 1 column */
+  .programs-section .bento-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  /* FORCE each card full width */
+  .programs-section .bento-card {
+    width: 100% !important;
+    min-height: 240px;
+    height: auto !important;
+  }
+
+  /* remove any nth-child tricks */
+  .programs-section .bento-card:nth-child(1),
+  .programs-section .bento-card:nth-child(2),
+  .programs-section .bento-card:nth-child(3),
+  .programs-section .bento-card:nth-child(4) {
+    grid-column: span 1 !important;
+  }
+
   .bento-grid {
     display: grid;
     grid-template-columns: 1fr;
