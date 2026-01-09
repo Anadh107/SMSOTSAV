@@ -516,7 +516,7 @@ footer {
   }
 
   .nav-logo img {
-    max-height: 36px;
+    max-height: 100px;
   }
 
   .hamburger {
@@ -552,14 +552,14 @@ footer {
   }
 
   .bento-grid {
+    display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
   }
 
   .bento-card {
     width: 100%;
-    min-height: 240px;
-    padding: 22px;
+    margin: 0%;
   }
 
   .bento-card::before {
