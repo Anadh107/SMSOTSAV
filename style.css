@@ -1,0 +1,471 @@
+:root {
+    --red: #D32F2F;   /* Saarang Red */
+    --cream: #F4F1EA; /* Saarang Off-white */
+    --black: #1A1A1A; /* Deep Black */
+}
+
+/* 1. Basic Reset & Fonts */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body { 
+    background-color: var(--cream); 
+    font-family: 'Poppins', sans-serif; 
+    color: var(--red); 
+    overflow-x: hidden; 
+}
+
+/* 2. Navbar with Glassmorphism */
+.navbar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 5%; 
+    border-bottom: 3px solid var(--red); 
+    position: sticky; 
+    top: 0; 
+    background: var(--cream); 
+    z-index: 100; 
+    overflow: hidden;
+}
+
+.nav-logo { 
+    display: flex;
+    align-items: center;
+    max-width: 180px;
+    font-family: 'Anton', sans-serif; 
+    font-size: 2.2rem; 
+    letter-spacing: 1px;
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-logo img {
+    max-height: 100px;
+    width: auto;
+    display: block;
+}
+
+.nav-links a { 
+    text-decoration: none; 
+    color: var(--red); 
+    font-weight: bold; 
+    margin-left: 20px; 
+    font-size: 0.9rem; 
+    text-transform: uppercase;
+}
+
+/* 3. Hero Section - The "Saarang" Look */
+.hero { 
+    height: 80vh; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    position: relative; 
+    text-align: center;
+
+    background-image:
+        linear-gradient(
+            rgba(244,241,234,0.85),
+            rgba(244,241,234,0.85)
+        ),
+        url("images/college-building.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-title { 
+    font-family: 'Anton', sans-serif; 
+    font-size: 18vw; 
+    line-height: 0.8; 
+    letter-spacing: -8px; 
+    z-index: 1; 
+    text-transform: uppercase;
+}
+
+/* Building Image Placement - Should look like it's "in" the site */
+.hero-image { 
+    position: absolute; 
+    width: 40%; 
+    top: 55%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+    border: 10px solid var(--red); /* Thick Neo-Brutalist Border */
+    box-shadow: 20px 20px 0px var(--black); /* 3D Offset Effect */
+    transition: 0.4s ease-in-out;
+    object-fit: cover;
+}
+
+/* Hero Section Image Source - Change 'college.jpg' to your filename */
+.hero-image {
+    content: url('images/college-building.jpg'); 
+}
+
+.hero-image:hover {
+    transform: translate(-52%, -52%);
+    box-shadow: 30px 30px 0px var(--red);
+}
+
+.hero-date { 
+    position: absolute; 
+    bottom: 40px; 
+    font-family: 'Anton', sans-serif; 
+    font-size: 2.5rem; 
+    background: var(--red);
+    color: var(--cream);
+    padding: 5px 20px;
+}
+
+/* 4. About Section */
+.about-section { 
+    padding: 100px 15%; 
+    text-align: center; 
+    border-top: 3px solid var(--red);
+    border-bottom: 3px solid var(--red);
+    background: white;
+}
+
+.section-label { 
+    font-family: 'Anton', sans-serif; 
+    font-size: 4rem; 
+    margin-bottom: 25px; 
+    text-decoration: underline;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--black);
+}
+
+/* 5. Bento Grid - Program Categories */
+.programs-section { padding: 80px 5%; }
+
+.explore-head { 
+    font-family: 'Anton', sans-serif; 
+    font-size: 6rem; 
+    margin-bottom: 40px; 
+    font-style: italic;
+}
+
+.bento-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+}
+
+.bento-card { 
+    height: 400px; 
+    padding: 30px; 
+    cursor: pointer; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    transition: 0.3s; 
+    border: 3px solid var(--red); 
+    position: relative;
+    overflow: hidden;
+}
+
+/* Images for each card */
+.bento-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; /* Light image in background */
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.bento-card:nth-child(1)::before { background-image: url('images/sports.jpg'); }
+.bento-card:nth-child(2)::before { background-image: url('images/cultural.jpg'); }
+.bento-card:nth-child(3)::before { background-image: url('images/technical.jpg'); }
+
+.red-bg { background: var(--red); color: var(--cream); }
+
+.bento-card:hover::before { opacity: 0.5; transform: scale(1.1); }
+
+.bento-card:hover { 
+    background: var(--black); 
+    color: white; 
+}
+
+/* Star Night Specific Styling */
+.black-bg { 
+    background: var(--black); 
+    color: var(--cream); 
+    grid-column: span 3; 
+    height: 250px; 
+    background-image: linear-gradient(to right, rgba(0,0,0,0.8), transparent), url('images/star-night.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.black-bg:hover {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+        url('images/star-night.jpg');
+}
+
+.card-num { font-size: 1.5rem; font-weight: bold; z-index: 1; }
+.bento-card h3 { font-family: 'Anton', sans-serif; font-size: 4rem; z-index: 1; }
+
+/* 6. Event Detail Page (Sub-page) */
+.event-overlay { 
+    position: fixed; 
+    top: 0; 
+    left: 100%; 
+    width: 100%; 
+    height: 100%; 
+    background: var(--cream); 
+    z-index: 200; 
+    transition: 0.6s cubic-bezier(0.8, 0, 0.2, 1); 
+    padding: 60px; 
+    overflow-y: auto; 
+}
+
+.event-overlay.active { left: 0; }
+
+.overlay-header { 
+    display: flex; 
+    align-items: center; 
+    gap: 30px;
+    border-bottom: 5px solid var(--red); 
+    padding-bottom: 20px; 
+    margin-bottom: 40px; 
+}
+
+.back-btn { 
+    background: var(--black); 
+    color: white; 
+    border: none; 
+    padding: 15px 30px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    font-family: 'Anton';
+}
+
+#page-category-title { font-family: 'Anton'; font-size: 5rem; }
+
+/* 7. Event List Styling */
+.event-row { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 30px 0; 
+    border-bottom: 2px solid rgba(211, 47, 47, 0.3); 
+}
+
+.event-name { font-size: 2rem; font-family: 'Anton'; text-transform: uppercase; }
+
+.action-btns button, .action-btns a { 
+    padding: 12px 25px; 
+    text-decoration: none; 
+    font-size: 0.9rem; 
+    font-weight: bold; 
+    margin-left: 15px; 
+    cursor: pointer; 
+    border: 3px solid var(--red); 
+    display: inline-block;
+}
+
+.rules-btn { background: transparent; color: var(--red); }
+.reg-btn { background: var(--red); color: var(--cream); }
+
+.rules-btn:hover { background: var(--red); color: white; }
+.reg-btn:hover { background: var(--black); border-color: var(--black); }
+
+/* 8. Rules Modal */
+.rules-overlay { background: var(--black) !important; color: white !important; }
+.rules-content { padding: 40px; font-size: 1.3rem; line-height: 2; }
+.rules-content li { margin-bottom: 15px; }
+
+.event-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-price {
+    font-size: 1rem;
+    margin-top: 6px;
+    color: var(--black);
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+/* Star Night Page */
+.star-night-wrapper {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.star-night-wrapper img {
+    width: 350px;
+    border: 6px solid var(--red);
+    box-shadow: 12px 12px 0 var(--black);
+}
+
+.star-night-text h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.star-night-text p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    max-width: 500px;
+}
+
+/* ===== Contact Section ===== */
+.contact-section {
+    padding: 90px 10%;
+    background: var(--cream);
+    border-top: 3px solid var(--red);
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.contact-left h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+
+.contact-left span {
+    color: var(--red);
+}
+
+.contact-left p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--black);
+    max-width: 500px;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.05rem;
+    color: var(--black);
+    background: white;
+    padding: 15px 25px;
+    border-left: 4px solid var(--red);
+    box-shadow: 4px 4px 0 var(--black);
+}
+
+.contact-item span {
+    font-size: 1.4rem;
+}
+
+.contact-item {
+    text-decoration: none;
+}
+
+/* Contact buttons hover animation */
+.contact-item {
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 8px 8px 0 var(--red);
+    background: var(--cream);
+}
+
+.contact-item:hover span {
+    transform: scale(1.1);
+}
+
+.contact-item span {
+    transition: transform 0.3s ease;
+}
+/* 9. Footer */
+footer {
+    background: linear-gradient(135deg, #111, #1a1a1a);
+    color: var(--cream);
+    padding: 70px 10%;
+    border-top: 4px solid var(--red);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-left h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.footer-left span {
+    color: var(--red);
+}
+
+.footer-left p {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+.footer-right {
+    text-align: right;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.footer-right a {
+    color: var(--cream);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.footer-right a:hover {
+    border-color: var(--red);
+    color: var(--red);
+}
+
+/* Bottom strip */
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
