@@ -10,15 +10,23 @@
 <body>
 
     <nav class="navbar">
-        <div class="nav-logo">
-            <img src="images/logo.png" alt="SMS Lucknow Logo">
-        </div>
-        <div class="nav-links">
-            <a href="#about">ABOUT</a>
-            <a href="#events">PROGRAMS</a>
-            <a href="https://smslucknow.ac.in/" target="_blank">COLLEGE SITE</a>
-            <a href="#contact">CONTACT US</a>
-        </div>
+
+    <div class="nav-logo">
+        <img src="images/logo.png" alt="SMS Lucknow Logo">
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="nav-links" id="mobileMenu">
+        <a href="#about" onclick="closeMenu()">ABOUT</a>
+        <a href="#events" onclick="closeMenu()">EXPLORE</a>
+        <a href="https://smslucknow.ac.in/" target="_blank" onclick="closeMenu()">COLLEGE SITE</a>
+        <a href="#contact">CONTACT US</a>
+    </div>
     </nav>
 
     <section class="hero" id="home">

@@ -59,6 +59,21 @@ body {
     text-transform: uppercase;
 }
 
+/* ===== Hamburger Menu ===== */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 26px;
+    background: var(--red);
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
 /* 3. Hero Section - The "Saarang" Look */
 .hero { 
     height: 80vh; 
@@ -469,3 +484,116 @@ footer {
     opacity: 0.6;
 }
 
+@media (max-width: 768px) {
+
+  /* ===== RESET HEAVY DESKTOP STYLES ===== */
+  .hero {
+    min-height: auto;
+    padding: 80px 20px 60px;
+    background-attachment: scroll;
+  }
+
+  .main-title {
+    font-size: 14vw;          /* 🔥 control */
+    letter-spacing: 0;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .hero-date {
+    position: static;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    display: inline-block;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .nav-logo img {
+    max-height: 42px;
+  }
+
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bento-card {
+    height: auto;
+    min-height: 220px;
+  }
+
+  .bento-card h3 {
+    font-size: 2.2rem;
+  }
+
+  .event-overlay {
+    padding: 20px;
+  }
+
+  .overlay-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  #page-category-title {
+    font-size: 2.5rem;
+  }
+
+  .event-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .action-btns {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .contact-container,
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-item {
+    width: 100%;
+    box-shadow: none;
+    transform: none;
+  }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--cream);
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 30px 0;
+        border-bottom: 3px solid var(--red);
+
+        display: none; /* 👈 hidden by default */
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
