@@ -508,33 +508,50 @@ footer {
   }
 
   .navbar {
-    flex-direction: column;
-    gap: 12px;
-    padding: 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
   }
 
-  .nav-links {
-    width: 100%;
-    justify-content: center;
-    gap: 18px;
-    flex-wrap: wrap;
+  .nav-logo {
+    flex: 0 0 auto;
   }
 
   .nav-logo img {
-    max-height: 42px;
+    max-height: 36px;
+  }
+
+  .hamburger {
+    margin-left: auto;
+  }
+
+  .nav-links {
+    top: 100%;
   }
 
   .bento-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .bento-card {
-    height: auto;
     min-height: 220px;
+    height: auto;
+    padding: 24px;
   }
 
   .bento-card h3 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .card-num {
+    font-size: 1.4rem;
+  }
+
+  .black-bg {
+    min-height: 260px;
   }
 
   .event-overlay {
@@ -578,22 +595,9 @@ footer {
         display: flex;
     }
 
-    .nav-links {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: var(--cream);
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        padding: 30px 0;
-        border-bottom: 3px solid var(--red);
+  .explore-head {
+    font-size: 3rem;
+    text-align: center;
+  }
 
-        display: none; /* 👈 hidden by default */
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
 }
