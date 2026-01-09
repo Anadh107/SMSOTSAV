@@ -54,6 +54,8 @@ function openEventPage(category) {
     });
 
     page.classList.add('active');
+
+    history.pushState({ page: "event" }, "", "#event");
 }
 
 function closeEventPage() {
@@ -62,6 +64,8 @@ function closeEventPage() {
 
     if (page) page.classList.remove('active');
     if (starContent) starContent.style.display = "none";
+
+    history.pushState({}, "", window.location.pathname);
 }
 
 
@@ -135,3 +139,12 @@ function closeMenu() {
     const menu = document.getElementById("mobileMenu");
     menu.classList.remove("active");
 }
+
+// Handle browser back button (mobile / desktop)
+window.addEventListener("popstate", function () {
+    const eventPage = document.getElementById("event-page");
+
+    if (eventPage && eventPage.classList.contains("active")) {
+        closeEventPage();
+    }
+});
