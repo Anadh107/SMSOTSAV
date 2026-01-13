@@ -5,6 +5,8 @@ typingSound.volume = 0.4;
 const notificationSound = new Audio("notification.mp3");
 notificationSound.volume = 0.6;
 
+let soundUnlocked = false;
+
 /* ====== LOAD CHATBOT HTML ====== */
 fetch("chatbot.html")
   .then(res => res.text())
@@ -33,6 +35,16 @@ function initChatbot() {
     college: "",
     district: ""
   };
+
+  function unlockSound() {
+  if (soundUnlocked) return;
+
+  notificationSound.play().then(() => {
+    notificationSound.pause();
+    notificationSound.currentTime = 0;
+    soundUnlocked = true;
+  }).catch(() => {});
+}
 
   /* OPEN BOT */
   openBot.onclick = () => {
