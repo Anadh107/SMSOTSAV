@@ -1,11 +1,21 @@
 /* ====== SOUNDS ====== */
-const typingSound = new Audio("typing.mp3");
-typingSound.volume = 0.4;
+let audioContext;
+let soundUnlocked = false;
 
+const typingSound = new Audio("typing.mp3");
 const notificationSound = new Audio("notification.mp3");
+
+typingSound.volume = 0.4;
 notificationSound.volume = 0.6;
 
-let soundUnlocked = false;
+/* ====== FIRST USER TOUCH = NOTIFICATION SOUND ====== */
+document.addEventListener(
+  "touchstart",
+  () => {
+    notificationSound.play().catch(() => {});
+  },
+  { once: true }
+);
 
 /* ====== LOAD CHATBOT HTML ====== */
 fetch("chatbot.html")
