@@ -410,10 +410,12 @@ body {
     padding: 60px; 
     overflow-y: auto; 
     -webkit-overflow-scrolling: touch; /* 👈 mobile smooth scroll */
+    overscroll-behavior: contain;
 }
 
 body.event-open {
     overflow: hidden;
+    height: 100%;
 }
 
 .event-overlay.active { left: 0; }
