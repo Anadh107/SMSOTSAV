@@ -56,6 +56,9 @@ function openEventPage(category) {
     page.classList.add('active');
 
     history.pushState({ page: "event" }, "", "#event");
+
+    document.getElementById("event-page").classList.add("active");
+    document.body.classList.add("event-open"); // 👈 ADD THIS
 }
 
 function closeEventPage() {
@@ -66,7 +69,11 @@ function closeEventPage() {
     if (starContent) starContent.style.display = "none";
 
     history.pushState({}, "", window.location.pathname);
+
+    document.getElementById("event-page").classList.remove("active");
+    document.body.classList.remove("event-open"); // 👈 ADD THIS
 }
+
 
 
 /* ================= RULES PAGE ================= */
