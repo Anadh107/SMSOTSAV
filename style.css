@@ -832,7 +832,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 14px 18px;
-    overflow: v;
+    overflow: visible;
   }
 
   .nav-logo img {
@@ -928,7 +928,7 @@ footer {
 
   /* ================= EVENT OVERLAY ================= */
   .event-overlay {
-    padding: 20px;
+    padding: 130px;
   }
 
   .overlay-header {
