@@ -928,7 +928,7 @@ footer {
 
   /* ================= EVENT OVERLAY ================= */
   .event-overlay {
-    padding-top: 130px;   /* navbar ke just neeche */
+    padding-top: 150px;   /* navbar ke just neeche */
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 30px;
@@ -993,8 +993,8 @@ footer {
   }
 
   .student-notice {
-    top: 80px; /* navbar ke neeche tight */
+    top: 100px; /* navbar ke neeche tight */
     font-size: 0.85rem;
   }
-  
+
 }
