@@ -928,7 +928,27 @@ footer {
 
   /* ================= EVENT OVERLAY ================= */
   .event-overlay {
-    padding: 130px;
+    padding-top: 130px;   /* navbar ke just neeche */
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 30px;
+  }
+
+    /* Header title size fix */
+  #page-category-title,
+  #rules-event-name {
+    font-size: 2.2rem;
+  }
+
+    /* Allow scrolling inside rules page */
+  #rules-page {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Body scroll lock sirf event page ke liye */
+  body.event-open #rules-page {
+    pointer-events: auto;
   }
 
   .overlay-header {
@@ -949,7 +969,14 @@ footer {
 
   .action-btns {
     width: 100%;
-    flex-wrap: wrap;
+    display: flex;
+    gap: 12px;
+  }
+
+  .action-btns button,
+  .action-btns a {
+    flex: 1;
+    text-align: center;
   }
 
   /* ================= CONTACT & FOOTER ================= */
@@ -965,4 +992,9 @@ footer {
     transform: none;
   }
 
+  .student-notice {
+    top: 80px; /* navbar ke neeche tight */
+    font-size: 0.85rem;
+  }
+  
 }
