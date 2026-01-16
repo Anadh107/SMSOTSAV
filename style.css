@@ -803,6 +803,84 @@ footer {
     display: none;
 }
 
+/* ===== FOOTER VISIBILITY FIX FOR OVERLAYS ===== */
+.event-overlay {
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.site-footer {
+    position: relative;
+}
+
+.event-overlay {
+    overflow-y: auto;
+    padding-bottom: 0;
+}
+
+/* ===== OUR SPONSORS ===== */
+.sponsors-section {
+  padding: 80px 0;
+  background: white;
+  border-top: 3px solid var(--red);
+}
+
+.sponsors-title {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.sponsors-title span {
+  color: var(--red);
+}
+
+.sponsors-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.sponsors-track {
+  display: flex;
+  gap: 80px;
+  width: max-content;
+  animation: sponsorScroll 18s linear infinite;
+  align-items: center;
+}
+
+.sponsors-track img {
+  height: 80px;
+  width: auto;
+  filter: grayscale(100%);
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
+
+.sponsors-track img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+/* Right → Left animation */
+@keyframes sponsorScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
 @media (max-width: 768px) {
 
   /* ================= HERO ================= */
@@ -995,6 +1073,18 @@ footer {
   .student-notice {
     top: 130px; /* navbar ke neeche tight */
     font-size: 0.85rem;
+  }
+
+    .sponsors-title {
+    font-size: 2.4rem;
+  }
+
+  .sponsors-track {
+    gap: 50px;
+  }
+
+  .sponsors-track img {
+    height: 60px;
   }
 
 }

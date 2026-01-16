@@ -12,17 +12,17 @@ let studentView = false;
 
 const eventData = {
     Sports: [
-        { name: 'Cricket', price: '₹1000 per team', form: 'https://forms.gle/link1' },
-        { name: 'Football', price: '₹1000 per team', form: 'https://forms.gle/link2' },
-        { name: 'Volleyball', price: '₹500 per team', form: 'https://forms.gle/link3' },
-        { name: 'Basketball', price: '₹500 per team', form: 'https://forms.gle/link4' },
-        { name: 'Tug of War', price: '₹500 per team', form: 'https://forms.gle/link5' },
-        { name: 'Chess', price: '₹100 per team', form: 'https://forms.gle/link6' },
-        { name: 'Carrom', price: '₹100 per team', form: 'https://forms.gle/link7' },
-        { name: '100M Race', price: '₹200 per team', form: 'https://forms.gle/link8' },
-        { name: '200M Race', price: '₹200 per team', form: 'https://forms.gle/link9' },
-        { name: 'Javelin', price: '₹300 per team', form: 'https://forms.gle/link10' },
-        { name: 'Shot Put', price: '₹300 per team', form: 'https://forms.gle/link11' }
+        { name: 'Cricket', price: '₹1000 per team', form: 'https://forms.gle/Bho11RKVRYS18ZpK9' },
+        { name: 'Football', price: '₹1000 per team', form: 'https://forms.gle/gQrH8PqwjGG8Px36A' },
+        { name: 'Volleyball', price: '₹500 per team', form: 'https://forms.gle/MoUDaGFCWiPzBdRL7' },
+        { name: 'Basketball', price: '₹500 per team', form: 'https://forms.gle/edZDBEf4d2ZZSX5g7' },
+        { name: 'Tug of War', price: '₹500 per team', form: 'https://forms.gle/ZpCfDvi4akRoeqxh7' },
+        { name: 'Chess', price: '₹100 per team', form: 'https://forms.gle/Ck2qETRrkovZwtA38' },
+        { name: 'Carrom', price: '₹100 per team', form: 'https://forms.gle/dguamtvnJeQ6zHfcA' },
+        { name: '100M Race', price: '₹200 per team', form: 'https://forms.gle/kodFd3VZw5ktkaXt8' },
+        { name: '200M Race', price: '₹200 per team', form: 'https://forms.gle/pWTnSHTozRkjWxBc7' },
+        { name: 'Javelin', price: '₹300 per team', form: 'https://forms.gle/FkUBai6ifDxtTvDZ9' },
+        { name: 'Shot Put', price: '₹300 per team', form: 'https://forms.gle/mMaDr4sJhRYtMhXU7' }
     ],
 
     Cultural: [

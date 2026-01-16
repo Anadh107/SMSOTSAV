@@ -1,0 +1,121 @@
+:root {
+    --red: #D32F2F;
+    --cream: #FDFCF8;
+    --black: #121212;
+}
+
+.community-page {
+    background: var(--cream);
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ================= HERO ================= */
+.community-hero {
+    padding: 160px 8% 90px;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(211,47,47,0.25), transparent 40%),
+        linear-gradient(135deg, #0e0e0e, #1f1f1f);
+    color: #fff;
+}
+
+.community-hero h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 5rem;
+    letter-spacing: 3px;
+}
+
+.community-hero span {
+    color: var(--red);
+}
+
+.community-hero p {
+    max-width: 620px;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+/* ================= SECTION ================= */
+.community-section {
+    padding: 90px 8%;
+}
+
+.community-section h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 3.2rem;
+    margin-bottom: 40px;
+    border-left: 8px solid var(--red);
+    padding-left: 22px;
+}
+
+/* ================= GRID ================= */
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    margin-bottom: 55px;
+}
+
+/* ================= CARD ================= */
+.power-card {
+    background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+    color: #fff;
+    padding: 32px;
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,0.28),
+        inset 0 0 0 1px rgba(255,255,255,0.06);
+
+    transition: 0.35s ease;
+}
+
+.power-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background: var(--red);
+}
+
+.power-card:hover {
+    transform: translateY(-10px);
+}
+
+.power-card h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.power-card p {
+    font-size: 1rem;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+    .community-hero h1 {
+        font-size: 3.1rem;
+    }
+
+    .community-section {
+        padding: 65px 6%;
+    }
+
+    .community-section h2 {
+        font-size: 2.4rem;
+        margin-bottom: 30px;
+    }
+
+    .leadership-grid {
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+}
