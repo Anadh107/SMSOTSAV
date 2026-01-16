@@ -26,32 +26,32 @@ const eventData = {
     ],
 
     Cultural: [
-        { name: 'Solo Singing', price: '₹100', form: 'https://forms.gle/link1' },
-        { name: 'Duet / Group Singing', price: '₹150 per team', form: 'https://forms.gle/link2' },
-        { name: 'Solo Dance', price: '₹100', form: 'https://forms.gle/link3' },
-        { name: 'Group Dance', price: '₹350 per team', form: 'https://forms.gle/link4' },
-        { name: 'Face-Off', price: '₹150', form: 'https://forms.gle/link5' },
-        { name: 'Mono Act', price: '₹100', form: 'https://forms.gle/link6' },
-        { name: 'Skit Play', price: '₹300 per team', form: 'https://forms.gle/link7' },
-        { name: 'Fashion Show (Depicting States of India)', price: '₹200 per pair', form: 'https://forms.gle/link8' },
-        { name: 'Stand-up / Mimicry (Solo)', price: '₹100', form: 'https://forms.gle/link9' },
-        { name: 'Stand-up / Mimicry (Group)', price: '₹150', form: 'https://forms.gle/link9' },
-        { name: 'Debate', price: '₹150', form: 'https://forms.gle/link10' },
-        { name: 'Poster Making', price: '₹100', form: 'https://forms.gle/link11' },
-        { name: 'Reel Making (Solo)', price: '₹100', form: 'https://forms.gle/link12' },
-        { name: 'Reel Making (Group)', price: '₹200 per team', form: 'https://forms.gle/link13' },
-        { name: 'Face Painting', price: '₹150', form: 'https://forms.gle/link14' }
+        { name: 'Solo Singing', price: '₹100', form: 'https://forms.gle/h5PvJqh4rzdmBT9g9' },
+        { name: 'Duet / Group Singing', price: '₹150 per team', form: 'https://forms.gle/fY475yAZy2KpAxx56' },
+        { name: 'Solo Dance', price: '₹100', form: 'https://forms.gle/5Y2hP2XhcyhoqzdDA' },
+        { name: 'Group Dance', price: '₹350 per team', form: 'https://forms.gle/t8kLG9pfZZxi6GTh7' },
+        { name: 'Face-Off', price: '₹150', form: 'https://forms.gle/mJfs4zK5udvTksek7' },
+        { name: 'Mono Act', price: '₹100', form: 'https://forms.gle/WvesummcSvxJ3icd9' },
+        { name: 'Skit Play', price: '₹300 per team', form: 'https://forms.gle/fVzERXYvqR6aXNKP8' },
+        { name: 'Fashion Show (Depicting States of India)', price: '₹200 per pair', form: 'https://forms.gle/fyLKoFHP1RjJgejx5' },
+        { name: 'Stand-up / Mimicry (Solo)', price: '₹100', form: 'https://forms.gle/24yY4YvskoKh6Pop8' },
+        { name: 'Stand-up / Mimicry (Group)', price: '₹150', form: 'https://forms.gle/24yY4YvskoKh6Pop8' },
+        { name: 'Debate', price: '₹150', form: 'https://forms.gle/opa5WXvhRpeejoUc6' },
+        { name: 'Poster Making', price: '₹100', form: 'https://forms.gle/21rAxxf5VFfJDiNe9' },
+        { name: 'Reel Making (Solo)', price: '₹100', form: 'https://forms.gle/MQkfpLTFKLUnSaYn6' },
+        { name: 'Reel Making (Group)', price: '₹200 per team', form: 'https://forms.gle/MQkfpLTFKLUnSaYn6' },
+        { name: 'Face Painting', price: '₹150', form: 'https://forms.gle/EiBknJ1LCJ9UHEqb7' }
     ],
 
 Technical: [
-    { name: 'Hackwave (Hackathon)', price: '₹500 per team', form: 'https://forms.gle/link1' },
-    { name: 'RoboRumble (Robothon)', price: '₹200 per member in a team', form: 'https://forms.gle/link2' },
-    { name: 'ByteBrawl (Coding War)', price: '₹200', form: 'https://forms.gle/link3' },
-    { name: 'AppSpark League (App Mania)', price: '₹200 per member (individual or team)', form: 'https://forms.gle/link4' },
-    { name: 'AdFiesta (Ad Mad Show)', price: '₹500 per team', form: 'https://forms.gle/link5' },
-    { name: 'BizQuest (Business Quiz)', price: '₹300 per team', form: 'https://forms.gle/link6' },
-    { name: 'VisionX Startup (Business Plan Competition)', price: '₹500 per team', form: 'https://forms.gle/link7' },
-    { name: 'MindMazer (Market Mania)', price: '₹500 per team', form: 'https://forms.gle/link8' }
+    { name: 'Hackwave (Hackathon)', price: '₹500 per team', form: 'https://forms.gle/tYNhBPkLZaRNqKtu5' },
+    { name: 'RoboRumble (Robothon)', price: '₹200 per member in a team', form: 'https://forms.gle/MfvX1yezbNW4YdHR6' },
+    { name: 'ByteBrawl (Coding War)', price: '₹200', form: 'https://forms.gle/UWgBhvKf4qTVyiyy7' },
+    { name: 'AppSpark League (App Mania)', price: '₹200 per member (individual or team)', form: 'https://forms.gle/6qRZNgEdAxh8EHtJ7' },
+    { name: 'AdFiesta (Ad Mad Show)', price: '₹500 per team', form: 'https://forms.gle/FB1foDP8cKPEwPaj7' },
+    { name: 'BizQuest (Business Quiz)', price: '₹300 per team', form: 'https://forms.gle/2rSMjQsoyw7xQwwo6' },
+    { name: 'VisionX Startup (Business Plan Competition)', price: '₹500 per team', form: 'https://forms.gle/fJxGzyd2L3pMPRKi8' },
+    { name: 'MindMazer (Market Mania)', price: '₹500 per team', form: 'https://forms.gle/e9xdnoBa4nWNqo2x6' }
 ]
 
 };
