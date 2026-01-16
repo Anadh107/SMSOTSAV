@@ -692,7 +692,7 @@ body.event-open {
 footer {
     background: linear-gradient(135deg, #111, #1a1a1a);
     color: var(--cream);
-    padding: 70px 10%;
+    padding: 40px 10% 30px;
     border-top: 4px solid var(--red);
 }
 
@@ -738,15 +738,29 @@ footer {
     color: var(--red);
 }
 
+
+/* 🔧 Footer community link fix */
+.footer-left a {
+    color: #ffffff;          /* white */
+    text-decoration: none;   /* underline off */
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.footer-left a:hover {
+    color: var(--red);       /* hover me red */
+}
+
 /* Bottom strip */
 .footer-bottom {
-    margin-top: 40px;
-    padding-top: 20px;
+    margin-top: 20px;
+    padding-top: 12px;
     border-top: 1px solid rgba(255,255,255,0.1);
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     opacity: 0.6;
 }
+
 
 /* show only when active */
 #event-page.active,
